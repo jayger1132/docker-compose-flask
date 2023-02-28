@@ -17,8 +17,9 @@ services:
     image: mysql
     container_name: mysql
     environment:
+      MYSQL_ROOT_PASSWORD: tokio328
       MYSQL_DATABASE: youbike
-      MYSQL_USER: root
+      MYSQL_USER: jayger1132
       MYSQL_PASSWORD: tokio328
     ports:
       - 3306:3306
@@ -26,7 +27,7 @@ services:
     image: adminer
     restart: always
     ports:
-      - 8080:8080
+      - 7000:7000
     depends_on:
       - db
 

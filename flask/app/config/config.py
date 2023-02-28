@@ -20,7 +20,7 @@ class BaseConfig:  # 基本配置
 class DevelopmentConfig(BaseConfig):
     DEBUG = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres_n:postgres_p@db:5432/db_name'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:tokio328@IP:3306/youbike'
 
 
 class TestingConfig(BaseConfig):
